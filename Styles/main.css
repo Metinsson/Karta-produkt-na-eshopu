@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.product {
+    margin: 1.5em;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product .varias {
+    display: none;
+}
+
+.product .varias img {
+    width: 50px;
+    height: 50px;
+}
+
+.product h1, .product h2 .product h3 {
+    font-size: 20px;
+    margin-bottom: -14px;
+}
+
+.product h3 {
+    font-weight: 400;
+}
+
+.product p {
+    color: gray;
+    margin-bottom: -10px;
+}
+
+.product.barva:hover h1, .product.barva:hover p {
+    display: none;
+}
+
+.product.barva:hover .varias {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.product p.highlight {
+    color: orangered;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
